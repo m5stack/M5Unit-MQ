@@ -181,11 +181,11 @@ public:
      * SDA pin).
      * @param scl    The SCL pin number (default is -1, meaning use the default
      * SCL pin).
-     * @param speed  The I2C bus speed in Hz (default is 4000000L).
+     * @param speed  The I2C bus speed in Hz (default is 400000L).
      *
      * @return True if initialization was successful, false otherwise.
      */
-    bool begin(TwoWire *wire = &Wire, uint8_t addr = -1, uint8_t sda = -1, uint8_t scl = -1, uint32_t speed = 4000000L);
+    bool begin(TwoWire *wire = &Wire, uint8_t addr = -1, uint8_t sda = -1, uint8_t scl = -1, uint32_t speed = 400000L);
 
     /**
      * @brief Sets the heat mode.
